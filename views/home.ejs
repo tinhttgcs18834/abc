@@ -1,0 +1,62 @@
+<%- include('partials/header') -%>
+
+<div class="header">
+    <h1>My Website</h1>
+    <p>A website created by me.</p>
+  </div>
+<% if ( username ) { %>
+    <P> <%=username%> </P>
+<% }  %>
+
+  <div class="navbar">
+    <a href="/">Home</a>
+    <a href="/products">Products</a>
+    <a href="/order">Order</a>
+    <a href="/login" class="right">Login</a>
+  </div>
+  <div class="container-fluid bg-1 text-center">
+    <h3>Project leader</h3>
+    <P><img width="600px" height="auto" src="/images/pleader.png" class="img-responsive"></P>
+    <h3>GCS18834</h3>
+  </div>
+  
+  <div class="container-fluid bg-2 text-center" style="color: bisque;">
+    <h3 style="background-color: black;">Staff</h3>
+    <p>No need to read this</p>
+    <div class="row">
+      <div class="col-sm-4" style="background-color: black;">
+        <a href="/profile/lich">King</a>
+        <P><img width="auto" height="auto" src="/images/person.png" class="img-responsive"></P>
+      </div>
+      <div class="col-sm-4" style="background-color: black;">
+        <a href="/profile/thrall">Jesus</a>
+        <P><img width="auto" height="auto" src="/images/person.png" class="img-responsive"></P>
+      </div>
+      <div class="col-sm-4" style="background-color: black;">
+        <a href="/profile/garrosh">Chief</a>
+        <P><img width="auto" height="auto" src="/images/person.png" class="img-responsive"></P>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid bg-3 text-center">    
+    <h3>Powered by</h3><br>
+    <div class="row">
+      <div class="col-sm-4">
+        <p>Node.JS Developer Community | by Developers, for Developers.</p>
+        <P><img width="auto" height="auto" src="/images/nodejs.png" class="img-responsive"></P>
+      </div>
+      <div class="col-sm-4"> 
+        <p>THE WORLD'S LARGEST WEB DEVELOPER SITE. w3schools.com.</p>
+        <P><img width="auto" height="auto" src="/images/W3Schools1.png" class="img-responsive"></P>
+      </div>
+      <div class="col-sm-4"> 
+        <p>The most popular HTML, CSS, and JS library in the world.</p>
+        <P><img width="auto" height="auto" src="/images/bootstrap3.png" class="img-responsive"></P>
+      </div>
+    </div>
+  </div>
+
+<P> <%= mesg %> </P>
+
+<%- include('partials/footer') -%>
